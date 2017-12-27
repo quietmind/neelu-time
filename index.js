@@ -1,8 +1,4 @@
 #!/usr/bin/env node
-console.log('Hello, world!');
-
-var time = new Date();
-
-var aussieTime = (time.getHours() -16 ) + ":" + time.getMinutes()
-
-console.log(aussieTime)
+var moment = require('moment-timezone');
+var aussieTime = moment().tz("Australia/Sydney").format('h:mm:ss a, MMMM Do')
+console.log(aussieTime);

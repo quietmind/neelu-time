@@ -8,7 +8,10 @@
   },
   "author": "adammateo",
   "license": "Apache-2.0",
-   "bin": {
-   "neelutime": "./index.js"
- }
+  "bin": {
+    "neelutime": "./index.js"
+  },
+  "dependencies": {
+    "moment-timezone": "^0.5.14"
+  }
 }
